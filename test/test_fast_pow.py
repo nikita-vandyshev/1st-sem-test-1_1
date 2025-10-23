@@ -17,3 +17,10 @@ def test_negative_power():
         assert False
     except ValueError:
         pass
+
+def test_invalid_power_type():
+    try:
+        fastPow(2, 2.5)
+        assert False
+    except ValueError:
+        pass
