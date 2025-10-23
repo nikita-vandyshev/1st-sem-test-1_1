@@ -24,3 +24,9 @@ def test_invalid_power_type():
         assert False
     except ValueError:
         pass
+    
+def test_additional_cases():
+    assert fastPow(2, 3) == 8
+    assert fastPow(1, 100) == 1
+    assert fastPow(0, 5) == 0
+    assert fastPow(-2, 3) == -8
