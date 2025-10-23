@@ -11,3 +11,9 @@ def test_negative():
 def test_zero_power():
     assert fastPow(5, 0) == 1
 
+def test_negative_power():
+    try:
+        fastPow(2, -1)
+        assert False
+    except ValueError:
+        pass
